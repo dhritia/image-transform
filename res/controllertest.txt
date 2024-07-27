@@ -1,0 +1,16 @@
+load res/flowers.jpg f
+red-component f f-red
+blue-component f f-blue
+green-component f f-green
+value-component f f-value
+luma-component f f-luma
+intensity-component f f-intensity
+horizontal-flip f f-hflip
+vertical-flip f f-vflip
+brighten 50 f f-bright
+darken 50 f f-dark
+rgb-split f f-red f-green f-blue
+rgb-combine f-new f-red f-green f-blue
+blur f f-blur
+sharpen f f-sharp
+sepia f f-sepia

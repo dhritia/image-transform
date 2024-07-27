@@ -1,0 +1,13 @@
+load res/flowers.jpg f
+compress 30 f f-comp
+histogram f f-hist
+color-correct f f-color-cor
+levels-adjust 30 80 160 f f-lvl-adj
+color-correct f f-color-cor-split split 50
+levels-adjust 30 80 160 f f-lvl-adj-split split 75
+blur f f-blur-split split 30
+sharpen f f-sharpen-split split 60
+sepia f f-sepia-split split 35
+value-component f f-value-split split 25
+luma-component f f-luma-split split 45
+intensity-component f f-intensity-split split 90

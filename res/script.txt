@@ -1,0 +1,68 @@
+load res/flowers.jpg f
+compress 30 f f-comp
+compress 80 f f-comp2
+color-correct f f-color-cor
+color-correct f f-color-cor-split split 50
+levels-adjust 30 80 160 f f-lvl-adj
+levels-adjust 50 100 200 f f-lvl-adj-2
+levels-adjust 30 80 160 f f-lvl-adj-split split 60
+histogram f historg
+histogram f-comp comphist
+histogram f-comp2 comphist2
+histogram f-color-cor cchist
+histogram f-lvl-adj lvhist1
+histogram f-lvl-adj-2 lvhist2
+blur f f-blur-split split 30
+sharpen f f-sharpen-split split 60
+sepia f f-sepia-split split 35
+value-component f f-value-split split 25
+luma-component f f-luma-split split 45
+intensity-component f f-intensity-split split 90
+red-component f f-red
+blue-component f f-blue
+green-component f f-green
+value-component f f-value
+luma-component f f-luma
+intensity-component f f-intensity
+horizontal-flip f f-hflip
+vertical-flip f f-vflip
+brighten 50 f f-bright
+darken 50 f f-dark
+rgb-split f f-red f-green f-blue
+rgb-combine f-new f-red f-green f-blue
+blur f f-blur
+sharpen f f-sharp
+sepia f f-sepia
+save res/compression30.jpeg f-comp
+save res/compression80.jpeg f-comp2
+save res/colorcorrect.jpeg f-color-cor
+save res/colorcorrectsplit.jpeg f-color-cor-split
+save res/LvlAdjust1.jpeg f-lvl-adj
+save res/LvlAdjust2.jpeg f-lvl-adj-2
+save res/LvlAdjustSplit.jpeg f-lvl-adj-split
+save res/orginalImgHistogram.jpeg historg
+save res/comp30Histogram.jpeg comphist
+save res/comp80Histogram.jpeg comphist2
+save res/colorCorrectHistogram.jpeg cchist
+save res/LvlAdjust1Histogram.jpeg lvhist1
+save res/LvlAdjust2Histogram.jpeg lvhist2
+save res/BlurSplit.jpeg f-blur-split
+save res/SharpenSplit.jpeg f-sharpen-split
+save res/SepiaSplit.jpeg f-sepia-split
+save res/ValueSplit.jpeg f-value-split
+save res/LumaSplit.jpeg f-luma-split
+save res/IntensitySplit.jpeg f-intensity-split
+save res/flower-red.png f-red
+save res/flower-blue.png f-blue
+save res/flower-green.png f-green
+save res/flower-value.png f-value
+save res/flower-intensity.png f-intensity
+save res/flower-luma.png f-luma
+save res/flower-horizontal-flip.png f-hflip
+save res/flower-vertical-flip.png f-vflip
+save res/flower-bright.png f-bright
+save res/flower-dark.png f-dark
+save res/flower-rgbcombine.png f-new
+save res/flower-blur.png f-blur
+save res/flower-sharp.png f-sharp
+save res/flower-sepia.png f-sepia
